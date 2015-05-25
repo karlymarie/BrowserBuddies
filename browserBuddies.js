@@ -12,7 +12,7 @@
 
 
 
-// $.fn.meow = function(options) {
+// $.fn.browserBuddies = function() {
 
 var app = {};
 
@@ -214,7 +214,7 @@ app.actionRandomizer = function(actionArray) {
 	return randomAction;
 };
 
-var actions = ['runLeft', 'walkLeft', 'crawlLeft', 'yawn', 'chasingTail', 'sleeping', 'runRight'];
+var actions = ['runLeft', 'walkLeft', 'crawlLeft', 'yawn', 'chasingTail', 'runRight'];
 
 
 app.init = function() {

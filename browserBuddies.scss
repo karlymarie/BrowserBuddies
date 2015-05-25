@@ -17,6 +17,34 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	left: 80%;
 }
 
+.onSwitch {
+  float: right;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.catSwitch {
+  fill: #cfca42;
+  height: 50px;
+  width: 50px;
+}
+
+i {
+  color:#fcf5bf;
+  background: #cfca42;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 6px;
+}
+
+.offSwitch {
+  padding: 16px 20px 0 0 ;
+  float: right;
+  text-align: center;
+
+}
+
 .kittyCat {
   background: url(sprites/yawn.png) 0 0 no-repeat;
   width: 200px;
@@ -194,19 +222,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   100% {background-position: -1000px 0;} } /* Must be full width of sprite or skipping will happen.*/
 
 
-.onSwitch {
-	background: green;
-	height: 20px;
-	width: 20px;
-	float: right;
-}
 
-.offSwitch {
-	background: orange;
-	height: 20px;
-	width: 20px;
-	float: right;
-}
 
 //Each of the following actions (Walking, Rolling, etc) will be in an array
 //The actions will be called upon randomly using a random number function
