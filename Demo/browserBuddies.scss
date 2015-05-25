@@ -1,0 +1,268 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.container {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+}
+
+.kittyCat-container {
+	position: absolute;
+	top: -200px;
+	left: 80%;
+}
+
+.kittyCat {
+  background: url(sprites/yawn.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+.sleeping {
+	background: url(sprites/sleeping.png) 0 0 no-repeat;
+ 	 width: 200px;
+ 	 height: 200px;
+}
+
+.yawn {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: yawn 3s steps(11) infinite;/* Safari 4+ */
+  -moz-animation: yawn 3s steps(11) infinite;/* Fx 5+ */
+  -o-animation:  yawn 3s steps(11) infinite;/* Opera 12+ */
+  animation: yawn 3s steps(11) infinite;
+  background: url(sprites/yawn.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes yawn {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -2200px 0;} }
+
+@keyframes yawn {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -2200px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+
+  .chasingTail {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: chasingTail 1s steps(5) infinite;/* Safari 4+ */
+  -moz-animation: chasingTail 1s steps(5) infinite;/* Fx 5+ */
+  -o-animation:  chasingTail 1s steps(5) infinite;/* Opera 12+ */
+  animation: chasingTail 1s steps(5) infinite;
+  background: url(sprites/chasingTail.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes chasingTail {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} }
+
+@keyframes chasingTail {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+  .crawlLeft {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: crawlLeft 1s steps(8) infinite;/* Safari 4+ */
+  -moz-animation: crawlLeft 1s steps(8) infinite;/* Fx 5+ */
+  -o-animation:  crawlLeft 1s steps(8) infinite;/* Opera 12+ */
+  animation: crawlLeft 1s steps(8) infinite;
+  background: url(sprites/crawlLeft.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes crawlLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} }
+
+@keyframes crawlLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+
+ .crawlRight {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: crawlRight 1s steps(8) infinite;/* Safari 4+ */
+  -moz-animation: crawlRight 1s steps(8) infinite;/* Fx 5+ */
+  -o-animation:  crawlRight 1s steps(8) infinite;/* Opera 12+ */
+  animation: crawlRight 1s steps(8) infinite;
+  background: url(sprites/crawlRight.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes crawlRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} }
+
+@keyframes crawlRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+  .walkLeft {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: walkLeft 1s steps(8) infinite;/* Safari 4+ */
+  -moz-animation: walkLeft 1s steps(8) infinite;/* Fx 5+ */
+  -o-animation:  walkLeft 1s steps(8) infinite;/* Opera 12+ */
+  animation: walkLeft 1s steps(8) infinite;
+  background: url(sprites/walkLeft.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes walkLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} }
+
+@keyframes walkLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+
+  .walkRight {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: walkRight 1s steps(8) infinite;/* Safari 4+ */
+  -moz-animation: walkRight 1s steps(8) infinite;/* Fx 5+ */
+  -o-animation:  walkRight 1s steps(8) infinite;/* Opera 12+ */
+  animation: walkRight 1s steps(8) infinite;
+  background: url(sprites/walkRight.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes walkRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} }
+
+@keyframes walkRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1600px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+
+  .runLeft {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: runLeft 1s steps(5) infinite;/* Safari 4+ */
+  -moz-animation: runLeft 1s steps(5) infinite;/* Fx 5+ */
+  -o-animation:  runLeft 1s steps(5) infinite;/* Opera 12+ */
+  animation: runLeft 1s steps(5) infinite;
+  background: url(sprites/runLeft.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes runLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} }
+
+@keyframes runLeft {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+  .runRight {
+  /* steps causes the animation to chunk into 9 equal pieces */
+  -webkit-animation: runRight 1s steps(5) infinite;/* Safari 4+ */
+  -moz-animation: runRight 1s steps(5) infinite;/* Fx 5+ */
+  -o-animation:  runRight 1s steps(5) infinite;/* Opera 12+ */
+  animation: runRight 1s steps(5) infinite;
+  background: url(sprites/runRight.png) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+
+@-webkit-keyframes runRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} }
+
+@keyframes runRight {  
+  0% {background-position: 0 0; } 
+  100% {background-position: -1000px 0;} } /* Must be full width of sprite or skipping will happen.*/
+
+
+.onSwitch {
+	background: green;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+
+.offSwitch {
+	background: orange;
+	height: 20px;
+	width: 20px;
+	float: right;
+}
+
+//Each of the following actions (Walking, Rolling, etc) will be in an array
+//The actions will be called upon randomly using a random number function
+//No click required for these actions, they will just continually move and play on screen
+
+
+
+//Walking:
+//==========================
+//==========================
+//Create a function that will move all four legs at once, and move the character from point a to point b
+//Legs will appear to be walking by rotating each by 45 degree angels (1 forward & 1 back)
+//Action will be continuous until character reaches point B
+
+
+	//Each of these will rotate a leg, to make it appear as though it is walking
+
+	//This will move the kitty from point A to point B
+
+
+//Rolling:
+//==========================
+//==========================
+//Kitty will roll from point A to B using the rotate animation 
+//Action will be continuous until character reaches point B
+
+
+//Eat a Flower:
+//==========================
+//==========================
+//Character will stop walking
+//Flower will pop up from ground in front of character
+//Head of character will wobble or toggle a little bit
+//Flower will disappear in sections, as if being eaten
+//When flower is gone, character will move on to next action
+
+
+//Chase Rolling Ball of Yarn
+//==========================
+//==========================
+//Run after a rolling ball, front of body or head closer to ground 
+//Maybe leap a little bit in excitement
+//The yarn could unravel while rolling? :) 
+
+//Jump or Leap!
+//==========================
+//==========================
+
+//Random Action
+//==========================
+//==========================
+
+//Random Action
+//==========================
+//==========================
+
+//Random Action
+//==========================
+//==========================
