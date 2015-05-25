@@ -23,7 +23,7 @@ app.events = function() {
 	//The character will drop from the top of the screen to the bottom
 	$( ".onSwitch" ).click(function() {
 	   $(".kittyCat-container").animate({
-	   	top: '65%'}, 2000);
+	   	top: '75%'}, 2000);
 
 	   //have set interval loop
 	   //for every loop, run action randomizer
